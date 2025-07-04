@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,13 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
   <style>
-    
-    h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 3rem;
-      margin-top: 2rem;
-    }
-
     body {
       margin: 0;
       background: radial-gradient(ellipse at bottom, #1a1a2e, #0f0c29 80%);
@@ -39,7 +32,7 @@
     .scroll-container {
   position: relative;
   width: 90%;
-  max-width: 700px;
+  max-width: 800px;
   height: 0;
   overflow: hidden;
   background: url('YOUR_SCROLL_IMAGE.webp') no-repeat center center;
@@ -48,8 +41,7 @@
   border-radius: 12px;
   animation: glow 3s ease-in-out infinite;
 }
-
-    
+   
     .scroll-content {
       position: absolute;
       top: 20%;
@@ -61,7 +53,7 @@
       line-height: 1.8;
       opacity: 0;
     }
-  
+   
     .floating-heart {
       position: absolute;
       width: 30px;
@@ -408,14 +400,44 @@
       background: #e91e63;
     }
 
+   
+  .audio {
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    background-color: #ec4899;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .audio:hover {
+    background-color: #db2777;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+
+
 
  </style>
 </head>
 <body>
-  <!-- Hero Section -->
-<section class="section">
-  <h1 class="text-5xl font-bold glow-text mb-10">🎂 Happy Birthday mitarr 🎂</h1>
 
+ 
+
+  <!-- Hero Section -->
+<section class="section section1">
+  <h1 class="text-5xl font-bold glow-text mb-10">🎂 Happy Birthday mitarr 🎂</h1>
+<audio class="audio" controls>
+  <source src="Jugraafiya .mp3.mp3" type="audio/mp3">
+</audio>
+
+ 
   <button id="openScroll" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-bold transition-all duration-300">
     Open the Special letter 
   </button>
@@ -433,8 +455,8 @@
                    0 0 60px #f0f;"> 
         hi! so i wish you a very happy birthday <br/>
         mereko ko ghanta tameez nhi latter likhna ki to kuch bhi accha umid mt krna <br/>
-       lg nhi rha tha ek math ke sawal sa shuru hui baat muje ek nye namune sa mila degi <br/>
-       you are the only one jise dekh kr muje confidence ata h <br/>
+       btw, lg nhi rha tha ek math ke sawal sa shuru hui baat muje ek nye namune sa mila degi <br/>
+       but, you are the only one jise dekh kr muje confidence ata h <br/>
         tere liya 4 line<br/>
         sun ko bolte h suraj <br/>
        or weight ko bolte h bhoj <br/>
@@ -462,8 +484,11 @@ or ha scroll kr or bhi chiz h...
   <div class="star" style="top:90%; left:20%; animation-delay: 1.2s;"></div>
   <div class="star" style="top:10%; left:80%; animation-delay: 1.5s;"></div>
 </section>
+
+<div class="gradient gradient1-2"></div>
+
 <!-- Stargazing Section -->
-<section class="section bg-black text-white">
+<section class="section section2 bg-black text-white">
   <h2 class="text-3xl font-bold mb-6 glow-text">✨ The Stars When Kritika Was Born ✨ <br>
     sources- nasa ma chacha h mera usne btya </h2>
   <canvas id="skyCanvas"></canvas>
@@ -473,10 +498,12 @@ or ha scroll kr or bhi chiz h...
     The universe itself sparkled to celebrate the birth of our Queen, Kritika. 🌌👸
   </p>
 </section>
+
+<div class="gradient gradient2-3"></div>
 <div class="stars-bg">
   <div class="moon"></div> </div>
   <!-- Generate many twinkle stars -->
- <section class="my-20 flex flex-col items-center justify-center">
+ <section class=" section3 my-20 flex flex-col items-center justify-center">
   <h2 class="text-3xl font-bold glow-text mb-6">📖 Kritika's Magical Pages 📖</h2>
  <div class="relative w-[420px] h-[300px] perspective">
  <div class="book-container">
@@ -489,7 +516,9 @@ or ha scroll kr or bhi chiz h...
   </div>
 <div id="particles-js" class="particles-bg"></div> </section> 
 
-<section id="solar-system" class="solar-section">
+<div class="gradient gradient3-4"></div>
+
+<section id="solar-system" class="section4 solar-section">
   <div class="sun">Kritika</div>
 
   <div class="planet orbit1"><div class="planet-inner">KANJUS</div></div>
@@ -501,9 +530,9 @@ or ha scroll kr or bhi chiz h...
 
   <div id="space-text" class="space-text">She warms hearts like the sun.</div> </section>
 
+  <div class="gradient gradient4-5"></div>
 
-
-<section id="kritika-constellation" style="position: relative; width: 100vw; height: 100vh; overflow: hidden;">
+<section class="section5" id="kritika-constellation" style="position: relative; width: 100vw; height: 100vh; overflow: hidden;">
   <canvas id="star-canvas"></canvas>
   <div class="name-overlay">K R I T I K A</div>
 </section>
@@ -534,14 +563,18 @@ or ha scroll kr or bhi chiz h...
   }
 </style>
 
-<section id="birthdayUniverse">
+<div class="gradient gradient5-6"></div>
+
+<section class="section6" id="birthdayUniverse">
   <canvas id="heartCanvas"></canvas>
   <canvas id="fireworkCanvas" style="display:none"></canvas>
   <div class="birthday-message" id="birthdayMessage">Happy Birthday ekloti mahila mitrr 🎉💖</div>
   <button id="launchBtn">🎆 Launch Fireworks</button>
 </section>
 
-<section class="section text-center">
+<div class="gradient gradient6-7"></div>
+
+<section class="section section7 text-center">
   <h2 class="text-4xl glow-text mb-4">💌 One Last Thing</h2>
   <p class="max-w-xl mx-auto text-lg text-white">
     You’re weird. You argue. You disappear randomly.<br/>
@@ -551,12 +584,24 @@ or ha scroll kr or bhi chiz h...
   </p>
 </section>
 
-
-
-
-
-
   <script>
+
+
+
+
+function showPlayer() {
+    const player = document.getElementById("musicPlayer");
+    player.classList.remove("hidden");
+
+    // Unmute on second click if needed
+    const iframe = document.getElementById("ytMusic");
+    const src = iframe.src;
+    if (src.includes("mute=1")) {
+      iframe.src = src.replace("mute=1", "mute=0");
+    }
+  }
+
+
     document.getElementById("openScroll").addEventListener("click", () => {
   gsap.to(seal, { scale: 0, duration: 0.5, ease: "power2.out" });
   scroll.style.height = "700px";
